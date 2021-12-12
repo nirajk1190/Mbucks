@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cvMain"
+    android:visibility="visible"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/dim_8"
+    app:cardElevation="@dimen/dim_4"
+    app:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="@dimen/dim_8"
+    card_view:cardPreventCornerOverlap="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dim_12">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="@dimen/dim_30"
+                android:layout_height="@dimen/dim_30"
+                android:layout_centerVertical="true"
+                android:background="@drawable/round_border_outline_oval"
+                android:padding="@dimen/dim_8"
+                android:src="@drawable/ic_retirement" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dim_8"
+                android:layout_toEndOf="@+id/ivIcon"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Retirement"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dim_12"
+                android:layout_toEndOf="@+id/tvTitle"
+                android:gravity="center_vertical|end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dim_12"
+                    android:layout_toEndOf="@+id/ivIcon"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="in"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/tvAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dim_4"
+                    android:layout_toEndOf="@+id/ivIcon"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="30"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dim_4"
+                    android:layout_toEndOf="@+id/ivIcon"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Yrs, at age "
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+
+                <TextView
+                    android:id="@+id/tvYears"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dim_4"
+                    android:layout_toEndOf="@+id/ivIcon"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="60"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dim_4"
+                    android:layout_toEndOf="@+id/ivIcon"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Yrs"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_4"
+            android:layout_marginTop="@dimen/dim_8"
+            android:layerType="software"
+            android:src="@drawable/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/dim_12"
+            android:paddingBottom="@dimen/dim_12"
+            android:layout_height="wrap_content">
+
+            <com.warkiz.widget.IndicatorSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isb_indicator_type="square_corners"
+                app:isb_max="90"
+                app:isb_indicator_color="@color/colorPrimary"
+                app:isb_min="0"
+                app:isb_seek_bar_type="continuous"
+                app:isb_show_indicator="true"
+                app:isb_thumb_color="@color/colorPrimary"
+                app:isb_thumb_width="18dp"
+                app:isb_tick_color="@color/colorPrimary"
+                app:isb_tick_num="9"
+                app:isb_tick_on_thumb_left_hide="true"
+                app:isb_tick_type="rec"
+                app:isb_track_background_bar_color="@color/dark_grey"
+                app:isb_track_background_bar_size="2dp"
+                app:isb_track_progress_bar_color="@color/colorPrimary"
+                app:isb_track_progress_bar_size="5dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_4"
+            android:layout_marginTop="@dimen/dim_8"
+            android:layerType="software"
+            android:src="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llRequireAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivIcon"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="I will require"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/universal_text_size14" />
+
+                <TextView
+                    android:id="@+id/tvRequiredAmt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivIcon"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="₹20 L"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/universal_text_size14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivIcon"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="I have"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/universal_text_size14" />
+
+                <TextView
+                    android:id="@+id/tvHaveAmt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivIcon"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="₹20 L"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/universal_text_size14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end|center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Shortfall"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/universal_text_size14" />
+
+                <TextView
+                    android:id="@+id/tvShortFallAmt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="₹0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/universal_text_size14" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_12">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="@dimen/dim_120"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/btn_grey"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Fully Covered"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="@dimen/dim_120"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Invest"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

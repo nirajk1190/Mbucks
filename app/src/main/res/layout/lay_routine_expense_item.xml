@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dim_12"
+    android:visibility="visible">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_12"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dim_8"
+        app:cardElevation="@dimen/dim_4"
+        app:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="@dimen/dim_8"
+        card_view:cardPreventCornerOverlap="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_12">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dim_12"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Title"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14dp" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dim_12"
+                    android:layout_toEndOf="@+id/tvTitle"
+                    android:gravity="center_vertical|end">
+
+                    <ImageView
+                        android:id="@+id/icDelete"
+                        android:layout_width="@dimen/dim_20"
+                        android:layout_height="@dimen/dim_20"
+                        android:layout_marginEnd="@dimen/dim_24"
+                        android:src="@drawable/delete" />
+
+                    <ImageView
+                        android:id="@+id/icEdit"
+                        android:layout_width="@dimen/dim_20"
+                        android:layout_height="@dimen/dim_20"
+                        android:src="@drawable/edit" />
+
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|start">
+
+                <TextView
+                    android:id="@+id/tvDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="in 1 Yrs, at age 53"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="13dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_24">
+
+                <LinearLayout
+                    android:id="@+id/llRequireAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/ivIcon"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Goal Amount"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/universal_text_size14" />
+
+                    <TextView
+                        android:id="@+id/tvGoalAmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/ivIcon"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="₹5.75 L/yr"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/universal_text_size14" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/ivIcon"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="I will have"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/universal_text_size14" />
+
+                    <TextView
+                        android:id="@+id/tvHaveAmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/ivIcon"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="₹5.75 L/yr"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/universal_text_size14" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end|center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Shortfall"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/universal_text_size14" />
+
+                    <TextView
+                        android:id="@+id/tvShortFallAmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="₹0/yr"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/universal_text_size14" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:id="@+id/llGoal"
+        android:layout_width="@dimen/dim_150"
+        android:layout_height="35dp"
+        android:layout_marginStart="@dimen/dim_16"
+        android:background="@drawable/drawable_green"
+        android:elevation="@dimen/dim_4"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Confortable"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/universal_text_size12" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

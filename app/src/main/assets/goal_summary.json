@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "title": "Life Protection",
+      "current_age": "30",
+      "age_at": "60",
+      "required_amt": "₹20 L",
+      "have_amt": "₹10 L",
+      "shortfall_amt": "₹10 L"
+    },
+    {
+      "title": "Retirement Fund",
+      "current_age": "30",
+      "age_at": "60",
+      "required_amt": "₹20 L",
+      "have_amt": "₹10 L",
+      "shortfall_amt": "₹10 L"
+    },
+    {
+      "title": "Marriage Fund",
+      "current_age": "30",
+      "age_at": "60",
+      "required_amt": "₹20 L",
+      "have_amt": "₹10 L",
+      "shortfall_amt": "₹10 L"
+    },
+    {
+      "title": "Education Fund",
+      "current_age": "30",
+      "age_at": "60",
+      "required_amt": "₹20 L",
+      "have_amt": "₹10 L",
+      "shortfall_amt": "₹10 L"
+    },
+    {
+      "title": "Home  Purchase",
+      "current_age": "30",
+      "age_at": "60",
+      "required_amt": "₹20 L",
+      "have_amt": "₹10 L",
+      "shortfall_amt": "₹10 L"
+    },
+    {
+      "title": "Anniversary Fund",
+      "current_age": "30",
+      "age_at": "60",
+      "required_amt": "₹20 L",
+      "have_amt": "₹10 L",
+      "shortfall_amt": "₹10 L"
+    },
+    {
+      "title": "Vehicle",
+      "current_age": "30",
+      "age_at": "60",
+      "required_amt": "₹20 L",
+      "have_amt": "₹10 L",
+      "shortfall_amt": "₹10 L"
+    },
+    {
+      "title": "Contingencies",
+      "current_age": "30",
+      "age_at": "60",
+      "required_amt": "₹20 L",
+      "have_amt": "₹10 L",
+      "shortfall_amt": "₹10 L"
+    },
+    {
+      "title": "My Routine Expenses",
+      "current_age": "30",
+      "age_at": "60",
+      "required_amt": "₹20 L",
+      "have_amt": "₹10 L",
+      "shortfall_amt": "₹10 L"
+    }
+  ]
+}

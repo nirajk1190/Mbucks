@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="@dimen/dim_12">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back_icon_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+                app:tint="@color/colorPrimary" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_24"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Goal Name"
+                    android:textColor="@color/edit_header_color"
+                    android:textSize="@dimen/universal_text_size14" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etGoalName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:background="@drawable/round_border_et"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:padding="@dimen/dim_12"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/universal_text_size14" />
+
+                <TextView
+                    android:id="@+id/tvGoalErrMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/progress_red"
+                    android:textSize="@dimen/universal_text_size10"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTargetAmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_12"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Add Amount"
+                    android:textColor="@color/edit_header_color"
+                    android:textSize="@dimen/universal_text_size14" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etTargetAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:background="@drawable/round_border_et"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:padding="@dimen/dim_12"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/universal_text_size14" />
+
+                <TextView
+                    android:id="@+id/tvTargetAmountErrMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/progress_red"
+                    android:textSize="@dimen/universal_text_size10"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_12"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Choose Month and Year"
+                    android:textColor="@color/edit_header_color"
+                    android:textSize="@dimen/universal_text_size14" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etChooseMonthYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:background="@drawable/round_border_et"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:drawableTint="@color/colorPrimary"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:padding="@dimen/dim_12"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/universal_text_size14" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llGoal"
+        android:layout_width="@dimen/dim_130"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dim_32"
+        android:background="@drawable/round_btn_active"
+        android:elevation="@dimen/dim_4"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/dim_12"
+        android:paddingBottom="@dimen/dim_12">
+
+        <TextView
+            android:id="@+id/tvGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/universal_text_size14" />
+
+    </LinearLayout>
+
+</RelativeLayout>

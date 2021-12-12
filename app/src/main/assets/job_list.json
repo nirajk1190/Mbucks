@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "jobTitle": "Telesales Executive",
+      "companyName": "Drona Edu",
+      "location": "Gurgaon",
+      "salaryRange": "₹ 25,000-₹ 30,000"
+    },
+    {
+      "jobTitle": "Customer Care Executive",
+      "companyName": "JD Groups Company",
+      "location": "Delhi",
+      "salaryRange": "₹ 15,000-₹ 20,000"
+    }
+  ]
+}

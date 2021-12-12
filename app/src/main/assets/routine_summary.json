@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "Ration",
+      "duration": "in 1 Yrs, at age 53",
+      "goalAmount": "₹5.75 L/yr",
+      "haveAmount": "₹5.75 L/yr",
+      "shortfall": "₹10 L"
+    },
+    {
+      "title": "Rent",
+      "duration": "in 1 Yrs, at age 53",
+      "goalAmount": "₹5.75 L/yr",
+      "haveAmount": "₹5.75 L/yr",
+      "shortfall": "₹10 L"
+    },
+    {
+      "title": "Electricity and Water Bills",
+      "duration": "in 1 Yrs, at age 53",
+      "goalAmount": "₹5.75 L/yr",
+      "haveAmount": "₹5.75 L/yr",
+      "shortfall": "₹10 L"
+    },
+    {
+      "title": "Car Expense",
+      "duration": "in 1 Yrs, at age 53",
+      "goalAmount": "₹5.75 L/yr",
+      "haveAmount": "₹5.75 L/yr",
+      "shortfall": "₹10 L"
+    },
+    {
+      "title": "Medical Expense",
+      "duration": "in 1 Yrs, at age 53",
+      "goalAmount": "₹5.75 L/yr",
+      "haveAmount": "₹5.75 L/yr",
+      "shortfall": "₹10 L"
+    },
+    {
+      "title": "Shopping",
+      "duration": "in 1 Yrs, at age 53",
+      "goalAmount": "₹5.75 L/yr",
+      "haveAmount": "₹5.75 L/yr",
+      "shortfall": "₹10 L"
+    },
+    {
+      "title": "Emergencies",
+      "duration": "in 1 Yrs, at age 53",
+      "goalAmount": "₹5.75 L/yr",
+      "haveAmount": "₹5.75 L/yr",
+      "shortfall": "₹10 L"
+    },
+    {
+      "title": "Outing",
+      "duration": "in 1 Yrs, at age 53",
+      "goalAmount": "₹5.75 L/yr",
+      "haveAmount": "₹5.75 L/yr",
+      "shortfall": "₹10 L"
+    },
+    {
+      "title": "Electronic Gadgets",
+      "duration": "in 1 Yrs, at age 53",
+      "goalAmount": "₹5.75 L/yr",
+      "haveAmount": "₹5.75 L/yr",
+      "shortfall": "₹10 L"
+    },
+    {
+      "title": "Other Expenses",
+      "duration": "in 1 Yrs, at age 53",
+      "goalAmount": "₹5.75 L/yr",
+      "haveAmount": "₹5.75 L/yr",
+      "shortfall": "₹10 L"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/app_bg"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/dim_12">
+
+        <ImageView
+            android:id="@+id/back_icon_iv"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/backarrow_ic" />
+
+        <LinearLayout
+            android:id="@+id/llAddGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_add_24"
+                android:drawablePadding="@dimen/dim_8"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Add Goal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/universal_text_size14" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dim_12"
+        android:paddingTop="@dimen/dim_12"
+        android:paddingStart="@dimen/dim_8"
+        android:paddingEnd="@dimen/dim_8">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llGoal"
+                android:layout_width="@dimen/dim_110"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_btn_active"
+                android:gravity="center_horizontal"
+                android:elevation="@dimen/dim_4"
+                android:paddingTop="@dimen/dim_8"
+                android:paddingBottom="@dimen/dim_8">
+
+                <TextView
+                    android:id="@+id/tvGoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Goal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/universal_text_size14" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llIncome"
+                android:layout_width="@dimen/dim_110"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/dim_4"
+                android:background="@drawable/round_btn_inactive"
+                android:gravity="center"
+                android:paddingTop="@dimen/dim_8"
+                android:paddingBottom="@dimen/dim_8">
+
+                <TextView
+                    android:id="@+id/tvIncome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Income"
+                    android:textColor="@color/tab_txt"
+                    android:textSize="@dimen/universal_text_size14" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llInvestment"
+                android:layout_width="@dimen/dim_110"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/dim_4"
+                android:background="@drawable/round_btn_inactive"
+                android:gravity="center"
+                android:paddingTop="@dimen/dim_8"
+                android:paddingBottom="@dimen/dim_8">
+
+                <TextView
+                    android:id="@+id/tvInvestment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Investment"
+                    android:textColor="@color/tab_txt"
+                    android:textSize="@dimen/universal_text_size14" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layout_bg"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvGoals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbarThumbVertical="@color/colorAccent"
+            android:scrollbars="vertical"
+            tools:itemCount="2"
+            tools:listitem="@layout/layout_goal" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
